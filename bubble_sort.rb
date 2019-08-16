@@ -1,17 +1,19 @@
 def bubble_sort(arr)
-    n=arr.length
+    n = arr.length
     loop do
-        swapped=false
+        swapped = false
         (n-1).times do |i|
             if arr[i]>arr[i+1]
-                arr[i],arr[i+1]=arr[i+1],arr[i]
-                swapped=true
+                arr[i],arr[i+1]= arr[i+1],arr[i]
+                swapped = true
             end
         end
         break if not swapped
     end
     arr
-end
+end 
+
+
 def bubble_sort_by(array)
     sorted = false
     while !sorted
